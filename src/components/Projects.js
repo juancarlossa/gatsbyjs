@@ -2,12 +2,18 @@ import styled from '@emotion/styled'
 import React from 'react'
 import img from "../assets/images/gatsbyjs.jpg"
 import Title from './subcomponents/Title'
+import Stack from './subcomponents/Stack'
 
 
 const Projects = () => {
+
+  const ProjectsSection = styled.section`
+    background-color: var(--clr-primary-0);
+  `
   const Projecs = styled.div`
-    background-color: #ffffff;
-    padding-bottom: 5rem ;
+    background-color: var(--clr-primary-0);
+    max-width: var(--max-width);
+    padding-bottom: 10rem ;
     width: 60vw;
     margin: 0 auto;
     display: grid;
@@ -17,7 +23,6 @@ const Projects = () => {
     column-gap: 2rem;
     align-items: center;
     justify-content: center;
-
   `
   const ProjectsCenter = styled.section`
     height: 100%;
@@ -57,8 +62,8 @@ const Projects = () => {
     :hover {
       transition: var(--transition);
       -webkit-transition: var(--transition);
-      background: var(--clr-primary-1);
-      border: 3px solid #dfdfdf;
+      background: var(--clr-primary-0);
+      border: 3px solid var(--clr-primary-7);
       p {
         color: white;
       }
@@ -77,7 +82,8 @@ const Projects = () => {
       position: relative;
       grid-column: 1 / 6;
       grid-row: 1;
-      border-radius: 15px;
+      border-radius: 5px;
+      border-color: black;
       &::before {
         width: 100%;
         content: "";
@@ -92,18 +98,21 @@ const Projects = () => {
       }
 `
   return (
-    <>
-    <Title title="projects" id="projects"/>
+    <ProjectsSection id="projects">
+    <Title title="projects" />
     <Projecs>
       <ProjectsCenter>
         <ProjectsImg src={img} alt="juank" />
         <ProjectsArticle>
           <h3>React.js</h3>
           <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+        <Stack name={"React"} />
+        <Stack name={"Gatsby"} />
+        <Stack name={"Styled-components"} />
         </ProjectsArticle>
       </ProjectsCenter>
     </Projecs>
-    </>
+    </ProjectsSection>
   )
 }
 

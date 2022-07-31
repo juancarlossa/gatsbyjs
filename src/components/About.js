@@ -5,9 +5,11 @@ import Stack from "./subcomponents/Stack"
 
 const About = () => {
   const AboutSection = styled.section`
-    padding: 7rem 0;
+    padding-bottom: 10rem;
+    padding-top: 3rem;
     align-items: center;
     justify-content: center;
+    background-color: var(--clr-primary-0);
   `
 
     const AboutCenter = styled.section`
@@ -32,8 +34,8 @@ const About = () => {
     @media screen and (min-width: 1170px) {
       grid-column: 1 / span 6;
     }
-      h4 {
-      color: var(--clr-primary-8);
+    h3 {
+      color: var(--clr-white-1);
     }
   `
   const AboutImg = styled.img`
@@ -60,7 +62,7 @@ const About = () => {
       }
 `
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <AboutCenter>
         <AboutArticle>
             <h3>About me</h3>

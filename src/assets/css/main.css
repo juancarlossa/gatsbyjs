@@ -10,6 +10,7 @@ Variables
 
 :root {
   /* dark shades of primary color */
+  --clr-primary-0: hsl(272, 76%, 13%);
   --clr-primary-1: hsl(272, 91%, 17%);
   --clr-primary-2: hsl(272, 79%, 23%);
   --clr-primary-3: hsl(272, 80%, 31%);
@@ -28,6 +29,8 @@ Variables
   --clr-grey-4: hsl(261, 28%, 39%);
   /* black */
   --clr-black-1: rgb(14, 14, 14);
+  --clr-white-1: hsl(273, 47%, 89%);
+  --clr-white-2: hsl(272, 15%, 63%);
   /* grey used for paragraphs */
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-8: hsl(210, 31%, 80%);
@@ -47,6 +50,8 @@ Variables
   --max-width: 1170px;
   --fixed-width: 700px;
   --background: rgb(8, 5, 26);
+
+  --max-width: 1000px
 }
 
 /*
@@ -61,6 +66,11 @@ Global Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
 body {
@@ -94,7 +104,7 @@ h4 {
 h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--clr-primary-10);
+  color: var(--clr-primary-9) !important;
 }
 
 h2 {
@@ -104,6 +114,7 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+  color: var(--clr-primary-10);
 }
 
 h4 {
@@ -112,8 +123,13 @@ h4 {
 
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-3);
+  color: var(--clr-white-2);
 }
+  p:hover {
+    color: var(--clr-white-1);
+    transition: var(--transition);
+  }
+
 
 @media screen and (min-width: 800px) {
   h1 {
@@ -639,4 +655,67 @@ Projects
     grid-row: 1 / 1;
     text-align: left;
   }
+}
+
+/*
+===============
+Contact Page
+===============
+*/
+.contact-page {
+  display: grid;
+  place-items: center;
+  padding: 5rem 0;
+}
+
+.contact-form {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  width: 90vw;
+  max-width: 35rem;
+}
+
+.contact-form:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.contact-form h3 {
+  padding-top: 1.25rem;
+  color: var(--clr-grey-5);
+}
+
+.form-group {
+  padding: 1rem 1.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-10);
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+
+.form-control::placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-1);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }

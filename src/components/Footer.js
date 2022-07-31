@@ -5,7 +5,7 @@ import styled from "@emotion/styled"
 const Footer = () => {
   const Footr = styled.footer`
     height: 9rem;
-    background: var(--clr-black-1);
+    background: var(--clr-primary-0);
     text-align: center;
     display: grid;
     place-items: center;
@@ -22,7 +22,8 @@ const Footer = () => {
       margin: 0 auto 1rem auto;
     }
     .social-link {
-      color: var(--clr-white);
+      color: var(--clr-primary-10);
+      transition: var(--transition);
       margin: 0 1rem ;
     }
     .social-link:hover {

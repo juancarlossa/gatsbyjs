@@ -9,12 +9,12 @@ import Title from "./subcomponents/Title"
 const Services = () => {
   const SectionServices = styled.section `
     padding: 5rem 0;
-    background: #e9e9e9;
+    background: var(--clr-primary-0);
   `
   const Servics = styled.div`
     width: 90vw;
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: var(--max-width);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     -webkit-column-gap: 2rem;
@@ -22,7 +22,7 @@ const Services = () => {
     column-gap: 2rem;
   `
   const Service = styled.article`
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.5rem;
     margin-bottom: 2rem;
     border: 2px solid var(--clr-primary-6);
     border-radius: var(--radius);
@@ -66,22 +66,22 @@ const Services = () => {
               <SiJavascript className="service-icon icon" id="icon1"/>
               <h4>Frontend</h4>
               <div className="underline un1"></div>
-              <p>A good appearance is even more important than a good code. That's why firstly I create lot of mockups, and then choose the best option so that the website looks incredible.</p>
-              <BsPlusCircleFill className="plus" />
+              <p>A good appearance is even more important than a good code. That's why firstly I create lot of mockups. </p>
+              
             </Service>
             <Service id="s2">
               <FaNode className="service-icon icon" id="icon2"/>
               <h4>Backend</h4>
               <div className="underline un2"></div>
-              <p>A good appearance is even more important than a good code. That's why firstly I create lot of mockups, and then choose the best option so that the website looks incredible.</p>
-            <BsPlusCircleFill className="plus" />
+              <p>A good appearance is even more important than a good code. That's why firstly I create lot of mockups.</p>
+            
             </Service>
             <Service id="s3">
               <BsTerminalFill className="service-icon icon" id="icon3"/>
               <h4>DevOps</h4>
               <div className="underline un3"></div>
-              <p>A good appearance is even more important than a good code. That's why firstly I create lot of mockups, and then choose the best option so that the website looks incredible.</p>
-              <BsPlusCircleFill className="plus" />
+              <p>A good appearance is even more important than a good code. That's why firstly I create lot of mockups.</p>
+              
             </Service>
       </Servics>
     </SectionServices>

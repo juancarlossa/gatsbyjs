@@ -1,7 +1,8 @@
 import React from 'react'
+import styled from '@emotion/styled'
 
-const Button = () => {
-   const Btn = styled.button`
+const Button = ({ button }) => {
+    const Btn = styled.button`
     text-transform: capitalize;
     background: var(--clr-primary-5);
     color: var(--clr-primary-10);
@@ -22,7 +23,9 @@ const Button = () => {
     }
   `
   return (
-    <Btn />
+    <Btn>
+      {button}
+    </Btn>
   )
 }
 

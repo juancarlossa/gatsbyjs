@@ -4,8 +4,8 @@ import styled from '@emotion/styled'
 const Stack = ({ name }) => {
   const Stac = styled.span`
     display: inline-block;
-    background: var(--clr-primary-10);
-    color: var(--clr-primary-1);
+    background: var(--clr-primary-4);
+    color: var(--clr-primary-10);
     margin: 0.25rem;
     padding: 0.25rem 0.7rem;
     border-radius: var(--radius);
@@ -14,8 +14,8 @@ const Stack = ({ name }) => {
     font-size: 0.85rem;
     margin-top: 0.5rem;
     :hover {
-    background: var(--clr-primary-1);
-    color: var(--clr-primary-10);
+    background: var(--clr-primary-9);
+    color: var(--clr-primary-1);
     transition: var(--transition);
     }
   `

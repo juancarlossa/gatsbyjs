@@ -12,11 +12,11 @@ const Nav = styled.nav `
   display: flex;
   align-items: center;
   z-index: 200;
-  background: var(--clr-black-1);
+  background: var(--clr-primary-0);
 `
 const NavCenter = styled.div`
   width: 90vw;
-  max-width: 1170px;
+  max-width: var(--max-width);
   margin: 0 auto;
     @media screen and (min-width: 768px) {
     display: grid;
@@ -88,7 +88,6 @@ const Resume = () => {
     </ResumeDiv>
   )
 }
-
 const Navbar = () => {
   return (
     <Nav>
@@ -98,9 +97,9 @@ const Navbar = () => {
         </NavHeader>
         <NavLinks>
           <Link to="/">Home</Link>
+          <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <Link to="/about/">About</Link>
-          <Link to="/contact/">Contact</Link>
+          <a href="#contact">Contact</a>
           <Resume />
         </NavLinks>
       </NavCenter>
