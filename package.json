@@ -1,0 +1,25 @@
+{
+  "name": "juancarlossaugarag",
+  "version": "1.0.0",
+  "private": true,
+  "description": "juancarlossaugarag",
+  "author": "juancarlossa",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "gatsby": "^4.19.2",
+    "gatsby-plugin-emotion": "^7.19.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
