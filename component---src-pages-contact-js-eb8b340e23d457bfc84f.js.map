@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-contact-js-eb8b340e23d457bfc84f.js","mappings":"0JAQA,UANgB,WACd,OACE,6BAEH,C","sources":["webpack://juancarlossaugarag/./src/pages/contact.js"],"sourcesContent":["import React from 'react'\r\n\r\nconst contact = () => {\r\n  return (\r\n    <div>contact</div>\r\n  )\r\n}\r\n\r\nexport default contact"],"names":[],"sourceRoot":""}

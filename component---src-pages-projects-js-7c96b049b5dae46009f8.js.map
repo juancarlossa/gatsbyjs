@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-projects-js-7c96b049b5dae46009f8.js","mappings":"0JAQA,UANiB,WACf,OACE,8BAEH,C","sources":["webpack://juancarlossaugarag/./src/pages/projects.js"],"sourcesContent":["import React from 'react'\r\n\r\nconst projects = () => {\r\n  return (\r\n    <div>projects</div>\r\n  )\r\n}\r\n\r\nexport default projects"],"names":[],"sourceRoot":""}

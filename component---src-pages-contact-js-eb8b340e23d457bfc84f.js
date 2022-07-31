@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjuancarlossaugarag=self.webpackChunkjuancarlossaugarag||[]).push([[501],{5791:function(a,u,n){n.r(u);n(7294);var c=n(3431);u.default=function(){return(0,c.tZ)("div",null,"contact")}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-eb8b340e23d457bfc84f.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjuancarlossaugarag=self.webpackChunkjuancarlossaugarag||[]).push([[853],{7219:function(a,u,n){n.r(u);n(7294);var r=n(3431);u.default=function(){return(0,r.tZ)("div",null,"projects")}}}]);
+//# sourceMappingURL=component---src-pages-projects-js-7c96b049b5dae46009f8.js.map
